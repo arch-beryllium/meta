@@ -1,0 +1,206 @@
+pkgname=(ui-phosh-meta ui-plasma-mobile-meta ui-lomiri-meta apps-phosh-meta apps-plasma-mobile-meta apps-lomiri-meta)
+pkgver=0.1
+pkgrel=1
+arch=(any)
+license=(Unlicense)
+
+
+package_ui-phosh-meta() {
+  depends=(gnome-initial-setup-mobile
+           gnome-software-mobile
+           gtk3-mobile
+           lightdm
+           mutter
+           phosh
+           squeekboard
+           zswap-arm)
+}
+
+package_apps-phosh-meta() {
+  depends=(evince-mobile
+           firefox
+           geary-mobile
+           gedit
+           gnome-calculator
+           gnome-clocks
+           gnome-control-center-mobile
+           gnome-maps
+           gnome-usage-mobile
+           gtherm
+           lollypop
+           megapixels
+           mobile-config-firefox
+           portfolio-file-manager
+           purple-matrix
+           purple-telegram)
+}
+
+
+package_ui-plasma-mobile-meta() {
+  depends=(accounts-qml-module
+           adwaita-icon-theme
+           bluedevil
+           bluez-qt
+           bootsplash-systemd
+           bootsplash-theme-kde
+           desktop-file-utils
+           discover
+           flatpak
+           geoclue
+           iio-sensor-proxy
+           kaccounts-integration
+           kaccounts-providers
+           kio-extras
+           kscreen
+           kwallet-pam
+           libofono-qt
+           maliit-framework
+           maliit-keyboard
+           modemmanager-qt
+           networkmanager-qt
+           noto-fonts-emoji
+           ofonoctl
+           packagekit
+           packagekit-qt5
+           plasma-mobile-nm
+           plasma-mobile-settings
+           plasma-nano
+           plasma-pa
+           plasma-phone-components
+           plasma-settings
+           plasma-wayland-protocols
+           plymouth-shim
+           polkit-kde-agent
+           powerdevil
+           presage
+           pulseaudio
+           pulseaudio-bluetooth
+           pulseaudio-qt
+           qmlkonsole
+           qqc2-breeze-style
+           qqc2-desktop-style
+           qt5-charts
+           qt5-es2-base
+           qt5-es2-declarative
+           qt5-es2-multimedia
+           qt5-es2-wayland
+           qt5-feedback
+           qt5-graphicaleffects
+           qt5-imageformats
+           qt5-quickcontrols
+           qt5-quickcontrols2
+           qt5-script
+           qt5-sensors
+           qt5-tools
+           qt5-websockets
+           qt5-webview
+           qtkeychain-qt5
+           sddm
+           signon-kwallet-extension
+           signon-plugin-oauth2
+           signon-ui
+           signond
+           telepathy-mission-control
+           telepathy-ofono
+           tlp
+           xdg-desktop-portal-kde
+           zswap-arm)
+}
+
+package_apps-plasma-mobile-meta() {
+  depends=(buho
+           calindori
+           index-fm
+           kalk
+           kcalendarcore
+           kclock
+           kcontacts
+           kdeconnect
+           keysmith
+           koko
+           kongress
+           kpeoplesink
+           kpeoplevcard
+           kplotting
+           kquicksyntaxhighlighter
+           krecorder
+           ktrip
+           kweather
+           neochat
+           nota
+           okular-mobile
+           plasma-angelfish
+           plasma-camera
+           plasma-dialer
+           plasma-phonebook
+           plasma-workspace-wallpapers
+           psensor
+           qmltermwidget
+           spacebar
+           telegram-desktop
+           vvave)
+}
+
+
+package_ui-lomiri-meta() {
+  depends=(archlinux-appstream-data
+           archlinux-keyring
+           archlinux-wallpaper
+           ayatana-indicator-datetime-git
+           ayatana-indicator-display
+           ayatana-indicator-notifications-git
+           ayatana-indicator-power
+           ayatana-indicator-session
+           ayatana-indicator-sound
+           bluedevil
+           bluez-qt
+           bootsplash-systemd
+           egl-wayland
+           flatpak
+           geoclue
+           gnome-online-accounts
+           gpsd
+           gtk3-mobile
+           iio-sensor-proxy
+           inputcontext-gtk
+           lightdm-lomiri
+           location-service
+           lomiri-indicator-bluetooth-git
+           lomiri-indicator-location-git
+           lomiri-indicator-transfer-git
+           lomiri-keyboard-git
+           lomiri-mobile-session
+           lomiri-sounds
+           lomiri-terminal-app
+           ofonoctl
+           qt5-es2-base
+           qt5-es2-declarative
+           qt5-es2-multimedia
+           qt5-es2-wayland
+           repowerd
+           sensorfw-git
+           telepathy-ofono
+           tlp
+           ttf-ubuntu-font-family
+           unity-system-compositor
+           unity8
+           xdg-desktop-portal-gtk
+           xorg-xwayland
+           zswap-arm)
+}
+
+package_apps-lomiri-meta() {
+  depends=(address-book-app-git
+           dialer-app-git
+           flashlight
+           lomiri-calculator-app
+           lomiri-clock-app
+           lomiri-docviewer-app
+           lomiri-filemanager-app
+           lomiri-gallery-app
+           lomiri-music-app
+           megapixels
+           messaging-app-git
+           morph-browser-git
+           unav)
+}
