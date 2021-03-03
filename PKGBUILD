@@ -1,23 +1,26 @@
 pkgname=(ui-phosh-meta ui-plasma-mobile-meta ui-lomiri-meta apps-phosh-meta apps-plasma-mobile-meta apps-lomiri-meta)
-pkgver=0.1
+pkgver=0.2
 pkgrel=1
 arch=(any)
 license=(Unlicense)
 
 
 package_ui-phosh-meta() {
-  depends=(gnome-initial-setup-mobile
+  depends=(
+           gnome-initial-setup-mobile
            gnome-software-mobile
            gtk3-mobile
            lightdm
            mutter
            phosh
            squeekboard
-           zswap-arm)
+           zswap-arm
+           )
 }
 
 package_apps-phosh-meta() {
-  depends=(evince-mobile
+  depends=(
+           evince-mobile
            firefox
            geary-mobile
            gedit
@@ -32,12 +35,14 @@ package_apps-phosh-meta() {
            mobile-config-firefox
            portfolio-file-manager
            purple-matrix
-           purple-telegram)
+           purple-telegram
+           )
 }
 
 
 package_ui-plasma-mobile-meta() {
-  depends=(accounts-qml-module
+  depends=(
+           qaccounts-qml-module
            adwaita-icon-theme
            bluedevil
            bluez-qt
@@ -104,11 +109,13 @@ package_ui-plasma-mobile-meta() {
            telepathy-ofono
            tlp
            xdg-desktop-portal-kde
-           zswap-arm)
+           zswap-arm
+           )
 }
 
 package_apps-plasma-mobile-meta() {
-  depends=(buho
+  depends=(
+           buho
            calindori
            index-fm
            kalk
@@ -138,16 +145,19 @@ package_apps-plasma-mobile-meta() {
            qmltermwidget
            spacebar
            telegram-desktop
-           vvave)
+           vvave
+           )
 }
 
 
 package_ui-lomiri-meta() {
-  depends=(archlinux-appstream-data
+  depends=(
+           archlinux-appstream-data
            archlinux-keyring
            archlinux-wallpaper
            ayatana-indicator-datetime-git
            ayatana-indicator-display
+           ayatana-indicator-messages-git
            ayatana-indicator-notifications-git
            ayatana-indicator-power
            ayatana-indicator-session
@@ -162,7 +172,9 @@ package_ui-lomiri-meta() {
            gpsd
            gtk3-mobile
            iio-sensor-proxy
+           indicator-network-git
            inputcontext-gtk
+           libaccounts-glib
            lightdm-lomiri
            location-service
            lomiri-indicator-bluetooth-git
@@ -186,11 +198,13 @@ package_ui-lomiri-meta() {
            unity8
            xdg-desktop-portal-gtk
            xorg-xwayland
-           zswap-arm)
+           zswap-arm
+           )
 }
 
 package_apps-lomiri-meta() {
-  depends=(address-book-app-git
+  depends=(
+           address-book-app-git
            dialer-app-git
            flashlight
            lomiri-calculator-app
@@ -202,5 +216,6 @@ package_apps-lomiri-meta() {
            megapixels
            messaging-app-git
            morph-browser-git
-           unav)
+           unav
+           )
 }
