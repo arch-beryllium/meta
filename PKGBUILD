@@ -1,5 +1,5 @@
 pkgname=(ui-phosh-meta ui-plasma-mobile-meta ui-lomiri-meta apps-phosh-meta apps-plasma-mobile-meta apps-lomiri-meta)
-pkgver=0.2
+pkgver=0.3
 pkgrel=1
 arch=(any)
 license=(Unlicense)
@@ -42,7 +42,6 @@ package_apps-phosh-meta() {
 
 package_ui-plasma-mobile-meta() {
   depends=(
-           qaccounts-qml-module
            adwaita-icon-theme
            bluedevil
            bluez-qt
