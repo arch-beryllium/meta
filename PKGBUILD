@@ -1,5 +1,5 @@
 pkgname=(ui-phosh-meta ui-plasma-mobile-meta ui-lomiri-meta apps-phosh-meta apps-plasma-mobile-meta apps-lomiri-meta)
-pkgver=0.3
+pkgver=0.4
 pkgrel=1
 arch=(any)
 license=(Unlicense)
@@ -114,6 +114,7 @@ package_ui-plasma-mobile-meta() {
 
 package_apps-plasma-mobile-meta() {
   depends=(
+           angelfish
            buho
            calindori
            index-fm
@@ -132,10 +133,9 @@ package_apps-plasma-mobile-meta() {
            krecorder
            ktrip
            kweather
+           maui-nota
            neochat
-           nota
            okular-mobile
-           plasma-angelfish
            plasma-camera
            plasma-dialer
            plasma-phonebook
