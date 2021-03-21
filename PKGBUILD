@@ -1,5 +1,5 @@
 pkgname=(ui-phosh-meta ui-plasma-mobile-meta ui-lomiri-meta apps-phosh-meta apps-plasma-mobile-meta apps-lomiri-meta)
-pkgver=0.4
+pkgver=0.5
 pkgrel=1
 arch=(any)
 license=(Unlicense)
@@ -10,6 +10,7 @@ package_ui-phosh-meta() {
            gnome-initial-setup-mobile
            gnome-software-mobile
            gtk3-mobile
+           kgx
            lightdm
            mutter
            phosh
